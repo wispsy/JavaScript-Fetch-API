@@ -1,0 +1,17 @@
+[project]
+name = "javascript"
+version = "0.1.0"
+description = "JavaScript-style Fetch API and promises for Python using the standard library"
+readme = "README.md"
+authors = [
+    { name = "ellainng", email = "299958882+ellainng@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+javascript = "javascript:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
