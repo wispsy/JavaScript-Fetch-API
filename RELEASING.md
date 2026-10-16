@@ -1,6 +1,6 @@
 # Publishing JavaScript-Fetch-API
 
-The v0.1.0 distribution name is `JavaScript-Fetch-API`; its Python import is `javascript`.
+The v0.2.0 distribution name is `JavaScript-Fetch-API`; its Python import is `fetch_api`.
 Requires Python 3.14 or later.
 
 ## One-time PyPI setup
@@ -21,14 +21,14 @@ exactly. A pending publisher does not reserve the package name.
 
 The GitHub repository uses an environment named `pypi`. No PyPI API token is needed.
 
-## Release v0.1.0
+## Release v0.2.0
 
-1. Ensure CI passes on the intended commit and `pyproject.toml` has version `0.1.0`.
-2. Create a GitHub release with tag `v0.1.0` targeting that commit and publish it.
+1. Ensure CI passes on the intended commit and `pyproject.toml` has version `0.2.0`.
+2. Create a GitHub release with tag `v0.2.0` targeting that commit and publish it.
 3. Monitor the Release workflow. It checks the tag, builds an sdist and a wheel
    from that sdist, validates metadata, and tests the installed wheel before
    publishing through the `pypi` environment using OpenID Connect.
-4. Verify installation with `python -m pip install JavaScript-Fetch-API==0.1.0`.
+4. Verify installation with `python -m pip install JavaScript-Fetch-API==0.2.0`.
 
 Publishing a GitHub release triggers the upload; pushing a tag alone does not.
 PyPI versions cannot be overwritten. Future releases must update the version

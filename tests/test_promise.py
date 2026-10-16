@@ -2,7 +2,7 @@ import asyncio
 import threading
 import unittest
 
-from javascript import Promise
+from fetch_api import Promise
 
 
 def deferred():

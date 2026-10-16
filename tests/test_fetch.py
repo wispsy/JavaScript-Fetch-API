@@ -12,7 +12,7 @@ from unittest.mock import patch
 from urllib.error import URLError
 from urllib.parse import parse_qs, quote, urlsplit
 
-from javascript import FetchError, Headers, JSONObject, Promise, Request, Response, fetch
+from fetch_api import FetchError, Headers, JSONObject, Promise, Request, Response, fetch
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -181,7 +181,7 @@ class FetchTests(unittest.TestCase):
                     promise.result(2)
 
     def test_network_failure_rejects(self):
-        with patch("javascript.fetch.build_opener") as factory:
+        with patch("fetch_api.fetch.build_opener") as factory:
             factory.return_value.open.side_effect = URLError("No connection")
             with self.assertRaises(FetchError):
                 fetch(f"{self.base}/json").result(2)
