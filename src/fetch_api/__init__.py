@@ -14,7 +14,3 @@ __all__ = [
     "Response",
     "fetch",
 ]
-
-
-def main() -> None:
-    print("Hello from javascript!")

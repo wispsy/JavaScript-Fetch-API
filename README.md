@@ -11,7 +11,7 @@ the asyncio event loop.
 python -m pip install JavaScript-Fetch-API
 ```
 
-The Python import remains `from javascript import fetch`.
+The Python import is `from fetch_api import fetch`.
 
 ## GET and JSON
 
@@ -20,7 +20,7 @@ Replace the example URL with an HTTP(S) endpoint that returns JSON:
 ```python
 import asyncio
 
-from javascript import JSONObject, fetch
+from fetch_api import JSONObject, fetch
 
 
 async def main() -> None:
@@ -146,7 +146,7 @@ Handlers return a value or another `Promise`; returned promises are adopted,
 and exceptions raised by handlers reject the next promise.
 
 ```python
-from javascript import fetch
+from fetch_api import fetch
 
 
 def read_json(response):
