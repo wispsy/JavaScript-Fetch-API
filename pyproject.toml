@@ -1,5 +1,5 @@
 [project]
-name = "javascript"
+name = "JavaScript-Fetch-API"
 version = "0.1.0"
 description = "JavaScript-style Fetch API and promises for Python using the standard library"
 readme = "README.md"
@@ -9,9 +9,22 @@ authors = [
 requires-python = ">=3.14"
 dependencies = []
 
-[project.scripts]
-javascript = "javascript:main"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+]
+keywords = ["javascript", "fetch"]
+
+[project.urls]
+Homepage = "https://github.com/outside-labs/JavaScript-Fetch-API"
+Repository = "https://github.com/outside-labs/JavaScript-Fetch-API"
+Issues = "https://github.com/outside-labs/JavaScript-Fetch-API/issues"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "javascript"

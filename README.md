@@ -1,9 +1,17 @@
-# JavaScript-style fetch for Python
+# JavaScript-Fetch-API
 
 A Python 3.14 implementation of the core JavaScript Fetch API, built with the
 standard library. There are no runtime dependencies. The HTTP transport uses
 `urllib.request`; requests run on background threads so `await` does not block
 the asyncio event loop.
+
+## Install
+
+```sh
+python -m pip install JavaScript-Fetch-API
+```
+
+The Python import remains `from javascript import fetch`.
 
 ## GET and JSON
 
