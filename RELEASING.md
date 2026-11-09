@@ -10,7 +10,7 @@ At https://pypi.org/manage/account/publishing/ add a pending GitHub publisher:
 | Field | Value |
 | --- | --- |
 | PyPI project name | `JavaScript-Fetch-API` |
-| Owner | `outside-labs` |
+| Owner | `wispsy` |
 | Repository | `JavaScript-Fetch-API` |
 | Workflow filename | `release.yaml` |
 | Environment | `pypi` |

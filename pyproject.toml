@@ -18,9 +18,9 @@ classifiers = [
 keywords = ["javascript", "fetch"]
 
 [project.urls]
-Homepage = "https://github.com/outside-labs/JavaScript-Fetch-API"
-Repository = "https://github.com/outside-labs/JavaScript-Fetch-API"
-Issues = "https://github.com/outside-labs/JavaScript-Fetch-API/issues"
+Homepage = "https://github.com/wispsy/JavaScript-Fetch-API"
+Repository = "https://github.com/wispsy/JavaScript-Fetch-API"
+Issues = "https://github.com/wispsy/JavaScript-Fetch-API/issues"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
